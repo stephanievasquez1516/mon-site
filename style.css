@@ -1,0 +1,152 @@
+/*Variables*/
+:root{
+    --bg: #cacfd1;   /*Couleur de fond du site*/
+    --text: #0f172a; /*Couleur principale du site*/
+    --muted: #2b313d; /*Couleur texte*/
+    --accent: #0EA5A4; /*Couleur bouton*/
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/*Global*/
+*{box-sizing: border-box}
+html,body{height:100%; margin:0;}
+body{
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+    font-size: 16px;
+}
+.container{
+    max-width: 1100px;
+    margin:0 auto;
+    padding:1.2 rem;}
+
+/*Header*/
+.site-header{
+    background:transparent;
+    padding:0.8rem 0;
+}
+
+.header-inner{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+}
+
+/*navigation*/
+.main-nav ul { 
+    list-style: none; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    gap: 0.5rem; }
+
+.main-nav a { 
+    text-decoration: none;
+     color: var(--muted);
+      padding: 0.35rem 0.6rem;
+       border-radius: 6px; }
+
+.main-nav a:hover,
+ .main-nav a:focus {
+    background: rgba(14,165,164,0.08);
+     color: var(--text); }
+
+/*accueil*/
+.hero { 
+    display: grid;
+     grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+       align-items: center;
+        padding: 2rem 0; }
+.hero h1 {
+     margin: 0 0 0.4rem 0;
+      font-size: 1.8rem; }
+.tagline {
+     margin: 0;
+      color: var(--muted); }
+
+/*boutons*/
+.btn {
+     display: inline-block;
+      padding: 0.45rem 0.8rem;
+       border-radius: 8px;
+        background: var(--accent);
+         color: white;
+          text-decoration: none; }
+.btn.ghost {
+     background: transparent;
+      border: 1px solid rgba(0,0,0,0.06);
+       color: inherit; }
+
+/*portfolio*/
+.projects-grid { 
+    display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem; }
+.project-card {
+     background: white; 
+     padding: 0.8rem; 
+     border-radius: 8px; }
+.project-card img {
+     width: 100%;
+      height: auto;
+       border-radius: 6px; }
+
+/*formulaire*/
+.contact-form { 
+    max-width: 700px;
+     background: white;
+      padding: 0.8rem;
+       border-radius: 8px; }
+.contact-form label {
+     display: block;
+      margin-top: 0.6rem;
+       font-weight: 600; }
+.contact-form input, .contact-form textarea { 
+    width: 100%; 
+    padding: 0.5rem;
+     margin-top: 0.3rem; 
+     border: 1px solid #e6e9ee;
+      border-radius: 6px; }
+
+/*footer*/
+.site-footer {
+     padding: 1rem 0;
+      color: var(--muted);
+       text-align: left; 
+       font-size: 0.95rem; }
+
+.social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.6rem;
+    justify-content: flex-start;
+}
+.social a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul.social {
+  list-style: none; 
+  padding: 0;  
+  margin: 0; 
+}
+
+.main-nav a {
+  color: #333;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #0EA5A4;         /* change la couleur */
+  text-decoration: underline; 
+  transform: scale(1.05);     
+}

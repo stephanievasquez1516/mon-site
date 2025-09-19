@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio - Stéphanie Romero-Vasquez</title>
+             <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+          <header class="site-header" role="banner">
+        <div class="container header-inner">
+        <a class="logo" href="index.html">
+            <img src="assets/images/logo.png" alt="Portrait de Stéphanie Romero-Vasquez" width="120" height="auto">
+        </a>
+
+
+        <nav class="main-nav" role="navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">Sur moi</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main class="container">
+        <h1>Portfolio</h1>
+        <section class="projects-grid" aria-label="Projet">
+            <article class="project-card">
+                <img src="assets/images/Projet.png" alt="Projet Arduino: système d'alarme à capteur ultrason">
+               <h3>système d'alarme avec capteur ultrason</h3> 
+               <p>
+                Développement d'un système de sécurité basé sur Arduino.
+                Le capteur ultrason (HC-SR04) détecte une intrusion et déclenche une alarme.
+                Un clavier de 16 touches permet d'entrer un code à 4 chiffres pour activer/désactivé le système.
+                Une DEL bicolore indique l'état: armé, désarmé ou alarme active.
+               </p>
+               <ul>
+                <li><strong>Technologies: </strong>Arduino, capteur  HC-SR04, clavier matriciel, DEL bicolore</li>
+                <li><strong>Fonctionnalités:</strong>Détection intrusion, alarme visuel, code de désactivation</li>
+            </ul>
+            </article>
+        </section>
+    </main>
+    </body>
+</html>
